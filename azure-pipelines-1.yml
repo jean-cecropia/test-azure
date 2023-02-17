@@ -5,7 +5,7 @@ trigger: none
 resources:
   pipelines:
     - pipeline: previous-pipeline-trigger
-      source: Pipeline1
+      source: Pipeline 1
       trigger: true
 
 pool:
