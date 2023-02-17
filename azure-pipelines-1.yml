@@ -22,4 +22,4 @@ pool:
 
 steps:
   - script: echo This pipeline was set to be triggered after first pipeline completes.
-  - script: echo 'Browser - ${{parameter.browser}}'
+  
