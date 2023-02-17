@@ -4,10 +4,17 @@ resources:
   pipelines:
     - pipeline: previous-pipeline-trigger
       source: Pipeline 1
-      branch: develop
-      trigger: 
-        branches:
-          - '*'
+      trigger: true
+
+parameters:
+  - name: browser
+    displayName: Browser
+    default: chrome
+    values:
+      - chrome
+      - firefox
+      - edge
+      - webkit
       
 
 pool:
