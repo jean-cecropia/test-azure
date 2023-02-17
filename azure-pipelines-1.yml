@@ -4,7 +4,11 @@ resources:
   pipelines:
     - pipeline: previous-pipeline-trigger
       source: Pipeline 1
-      trigger: true
+      branch: develop
+      trigger: 
+        branches:
+          - '*'
+      
 
 pool:
   vmImage: 'ubuntu-latest'
