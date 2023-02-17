@@ -1,5 +1,3 @@
-name: FirstPipeline
-
 trigger: 
   - main
 
