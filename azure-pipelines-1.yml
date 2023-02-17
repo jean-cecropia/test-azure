@@ -1,5 +1,3 @@
-name: SecondPipeline
-
 trigger: none
 
 resources:
