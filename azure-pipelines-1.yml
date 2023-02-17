@@ -1,0 +1,15 @@
+name: SecondPipeline
+
+trigger: none
+
+resources:
+  pipelines:
+    - pipeline: previous-pipeline-trigger
+      source: jean-cecropia.test-azure
+      trigger: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - script: echo This pipeline was set to be triggered after first pipeline completes.
